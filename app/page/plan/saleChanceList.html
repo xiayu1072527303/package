@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>首页-客户关系管理系统</title>
+    <link rel="stylesheet" href="resources/common/js/bootstrap/bootstrap.min.js">
+</head>
+
+<body>
+
+    <!-- 页头开始 -->
+    <script src="../../resources/js/common/header.js"></script>
+    <script src="../../resources/js/common/headerbar.js"></script>
+    <!-- 页头结束 -->
+
+    <!-- 左侧菜单导航开始 -->
+    <script src="../../resources/js/common/sidebar.js"></script>
+    <!-- 左侧菜单导航结束 -->
+
+    <!-- MAIN PANEL -->
+    <div id="main" role="main">
+        <!-- 路径导航开始 -->
+        <div id="ribbon">
+            <ol class="breadcrumb">
+                <li>首页</li>
+            </ol>
+        </div>
+        <!-- 路径导航结束 -->
+        <div id="content">
+
+            <div class="cxxx">
+                <div class="cxxx1"><span class="glyphicon glyphicon-edit"> 查询信息</span></div>
+                <div class="cxxx2">
+                    <span>客户名称</span><input type="text" id="cxz">
+                    <span>概要</span><input type="text">
+                    &nbsp;&nbsp;&nbsp;<span>联系人</span><input type="text" id="lxr">
+                    <!-- <div class="cxxx2x">| <span class="glyphicon glyphicon-chevron-down"></span></div> -->
+                </div>
+                <div class="cxxx3"><button>查询</button></div>
+            </div>
+
+            <div class="lbxx">
+                <div class="lbxx1"><span class="glyphicon glyphicon-list-alt"> 列表信息</div>
+                <table class="lbxx2">
+                    <tr>
+                        <th>序号</th>
+                        <th>客户名称</th>
+                        <th>概要</th>
+                        <th>成功几率（%）</th>
+                        <th>联系人</th>
+                        <th>联系人电话</th>
+                        <th>指派给</th>
+                        <th>指派时间</th>
+                        <th>状态</th>
+                        <th><span class="glyphicon glyphicon-cog" id=""></span>操作</th>
+                    </tr>
+                    <tr id="blh">
+                        <td class="">1</td>
+                        <td class="" id="cxz1">大连东软信息学院</td>
+                        <td class="">课程学习</td>
+                        <td class="">100</td>
+                        <td class="" id="lxr1">王乐山</td>
+                        <td class="">13578900987</td>
+                        <td>白景丽</td>
+                        <td>2016-08-31</td>
+                        <td class="">开发成功</td>
+                        <td class=""><a href="任务指派.html"><button class="glyphicon glyphicon-align-justify lbxx2bt"></button></a>
+                            <a href=""><button class="glyphicon glyphicon-ok lbxx2bt" onclick="sc()"></button></a>
+                            <a href=""><button class="glyphicon glyphicon-remove lbxx2bth" onclick="cc()"></button></a>
+                            <a href="销售机会信息.html"><button class="glyphicon glyphicon-search lbxx2btt"></button></a>
+                        </td>
+                    </tr>
+                    <tr id="blh">
+                        <td>2</td>
+                        <td id="cxz2">北京农学院</td>
+                        <td>提供视频资源学习</td>
+                        <td>81</td>
+                        <td id="lxr2">王丽</td>
+                        <td>13567890910</td>
+                        <td>白景丽</td>
+                        <td>2016-08-31</td>
+                        <td>开发失败</td>
+                        <td>
+                            <a href=""><button class="glyphicon glyphicon-align-justify lbxx2bt"></button></a>
+                            <a href=""><button class="glyphicon glyphicon-ok lbxx2bt" onclick="sc()"></button></a>
+                            <a href=""><button class="glyphicon glyphicon-remove lbxx2bth"  onclick="cc()"></button></a>
+                            <a href=""><button class="glyphicon glyphicon-search lbxx2btt"></button></a>
+                        </td>
+                    </tr>
+                    <tr id="blh">
+                        <td>3</td>
+                        <td id="cxz3">成都东软学院</td>
+                        <td>提供视频资源学习</td>
+                        <td>50</td>
+                        <td id="lxr3">张文锋</td>
+                        <td>15497649798</td>
+                        <td>白景丽</td>
+                        <td>2016-08-31</td>
+                        <td>开发中</td>
+                        <td>
+                            <a href=""><button class="glyphicon glyphicon-align-justify lbxx2bt"></button></a>
+                            <a href=""><button class="glyphicon glyphicon-ok lbxx2bt" onclick="sc()"></button></a>
+                            <a href=""><button class="glyphicon glyphicon-remove lbxx2bth" onclick="cc()"></button></a>
+                            <a href=""><button class="glyphicon glyphicon-search lbxx2btt"></button></a>
+                    </tr>
+                </table>
+                <div class="lbxx3">显示第<b id="num1">1</b>到第<b id="num2">3</b>条记录，总共<b id="num3">3</b>条记录</div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- 包含footer，引入公用 JS -->
+    <script src="../../resources/js/common/footer.js"></script>
+</body>
+<script src="../../resources/bootstrap/js/bootstrap.min.js"></script>
+<style>
+    .cxxx {
+        border: 1px solid rgb(200, 200, 200);
+        width: 1045px;
+        box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+
+    }
+
+    .cxxx1 {
+        height: 40px;
+        background-color: rgb(245, 245, 245);
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .cxxx2 {
+        height: 140px;
+        font-size: 13px;
+        padding-left: 30px;
+        padding-right: 25px;
+        padding-top: 15px;
+        border-top: 1px solid rgb(200, 200, 200);
+        border-bottom: 1px solid rgb(200, 200, 200);
+    }
+
+    #cxxx2x {
+        margin: 12px;
+        width: 385px;
+        height: 33px;
+        /* size: 12px; */
+        /* color: rgba(0, 0, 0, 0.7); */
+        /* position: absolute; 
+		top: 10px;
+		left: 10px; */
+        /* background-color: rgb(255, 123, 0); */
+    }
+
+    .cxxx2 span {
+        margin: 12px;
+        padding-left: 8px;
+    }
+
+    .cxxx2 input {
+        margin: 12px;
+        width: 385px;
+        height: 33px;
+        padding-left: 10px;
+    }
+
+    .cxxx3 {
+        background-color: rgb(245, 245, 245);
+        height: 50px;
+        text-align: right;
+        padding-right: 45px;
+        padding-top: 10px;
+    }
+
+    .cxxx3 button {
+        background-color: rgb(255, 123, 0);
+        font-size: 15px;
+        color: white;
+        margin-left: 20px;
+        height: 30px;
+        width: 55px;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 1px 1px 1px rgba(70, 70, 70, 0.5);
+    }
+
+    .lbxx {
+        border: 1px solid rgb(200, 200, 200);
+        width: 1045px;
+        box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+        margin-top: 30px;
+    }
+
+    .lbxx1 {
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.7);
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .lbxx1 span {
+        color: rgb(255, 255, 255);
+    }
+
+    .lbxx2 {
+        border: 1px solid rgb(200, 200, 200);
+        width: 100%;
+        text-align: center;
+    }
+    .lbxx2 tr{
+        height: 40px;
+    }
+
+    /* .lbxx2bjh{
+    background-color: rgba(230, 230, 230, 0.1);
+} */
+
+    .lbxx2 th {
+        background-color: rgb(207, 220, 236);
+        text-align: center;
+    }
+
+    .lbxx table td {
+        border: 1px solid rgb(200, 200, 200);
+    }
+
+    .lbxx2bt {
+        background-color: rgb(255, 123, 0);
+        color: white;
+        margin-left: 5px;
+        height: 25px;
+        width: 25px;
+        font-size: 5px;
+        border: none;
+        border-radius: 1px;
+        box-shadow: 1px 1px 1px rgba(70, 70, 70, 0.5);
+    }
+
+    .lbxx2bth {
+        background-color: rgb(255, 0, 0);
+        color: white;
+        margin-left: 5px;
+        height: 25px;
+        width: 25px;
+        font-size: 5px;
+        border: none;
+        border-radius: 1px;
+        box-shadow: 1px 1px 1px rgba(70, 70, 70, 0.5);
+    }
+
+    .lbxx2btt {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        margin-left: 5px;
+        font-size: 5px;
+        text-align: center;
+        height: 25px;
+        width: 25px;
+        box-shadow: 1px 1px 1px rgba(70, 70, 70, 0.5);
+        border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .lbxx2 tr th span {
+        color: rgb(64, 107, 163);
+        margin-right: 10px;
+    }
+
+    /* .lbxx2cztb{
+    color: rgb(78, 133, 216);
+    
+} */
+    .lbxx3 {
+        height: 50px;
+        padding-top: 30px;
+    }
+</style>
+
+<script>
+    $(function(){
+        $('.cxxx3').click(function () {
+			if ($('#cxz').val() == $('#cxz1').text()) {
+				$('#cxz1').parents('#blh').siblings('#blh').hide()
+				$('#num1').text('1');$('#num2').text('1');$('#num3').text('1');
+			} else {
+				// alert('无相关数据！')
+			}
+            if ($('#cxz').val() == $('#cxz2').text()) {
+				$('#cxz2').parents('#blh').siblings('#blh').hide()
+				$('#num1').text('2');$('#num2').text('2');$('#num3').text('1');
+			}
+            if ($('#cxz').val() == $('#cxz3').text()) {
+				$('#cxz3').parents('#blh').siblings('#blh').hide()
+				$('#num1').text('3');$('#num2').text('3');$('#num3').text('1');
+			}
+
+            if ($('#lxr').val() == $('#lxr1').text()) {
+				$('#lxr1').parents('#blh').siblings('#blh').hide()
+				$('#num1').text('1');$('#num2').text('1');$('#num3').text('1');
+			} else {
+				// alert('无相关数据！')
+			}
+			if ($('#lxr').val() == $('#lxr2').text()) {
+				$('#lxr2').parents('#blh').siblings('#blh').hide()
+				$('#num1').text('2');$('#num2').text('2');$('#num3').text('1');
+			}
+			if ($('#lxr').val() == $('#lxr3').text()) {
+				$('#lxr3').parents('#blh').siblings('#blh').hide()
+				$('#num1').text('3');$('#num2').text('3');$('#num3').text('1');
+			}
+
+        })
+    })
+
+
+
+    function sc() {
+        var result = confirm('确认这个销售机会已开发成功吗？')
+        if (result) {
+            alert('完成开发成功')
+        } else {
+            alert('取消开发成功')
+        }
+    }
+
+    function cc() {
+        var result = confirm('确认这个销售机会已开发失败吗？')
+        if (result) {
+            alert('完成开发失败')
+        } else {
+            alert('取消开发失败')
+        }
+    }
+
+    $(function () {
+        $('tr:odd').css('background-color', 'rgb(245, 245, 245)')
+
+        $('.lbxx2bth').click(function () {
+            $(this).parents('tr').hide()
+        })
+    })
+</script>
+
+</html>

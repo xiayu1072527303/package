@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>首页-客户关系管理系统</title>
+    <link rel="stylesheet" href="resources/common/js/bootstrap/bootstrap.min.js">
+</head>
+
+<body>
+
+    <!-- 页头开始 -->
+    <script src="../../resources/js/common/header.js"></script>
+    <script src="../../resources/js/common/headerbar.js"></script>
+    <!-- 页头结束 -->
+
+    <!-- 左侧菜单导航开始 -->
+    <script src="../../resources/js/common/sidebar.js"></script>
+    <!-- 左侧菜单导航结束 -->
+
+    <!-- MAIN PANEL -->
+    <div id="main" role="main">
+        <!-- 路径导航开始 -->
+        <div id="ribbon">
+            <ol class="breadcrumb">
+                <li>首页</li>
+            </ol>
+        </div>
+        <!-- 路径导航结束 -->
+        <div id="content">
+
+            <div class="khtj">
+                <div class="khtj1"><span class="glyphicon glyphicon-edit"> 客户添加</span></div>
+                <div class="khtj2">
+                    <div class="khtj2x"><span><b id="hxh">*</b>客户名称</span><input type="text" id="khmc" maxlength="30"></div>
+                    <div class="khtj2x"><span><b id="hxh">*</b>客户地区</span><input type="text" id="khdq"></div>
+                    <div class="khtj2x"><span><b id="hxh">*</b>客户经理</span><select id="kjtj2xx"><option>请选择</option><option>白景丽</option><option>张敬礼</option></select></div>
+                    <div class="khtj2x"><span><b id="hxh">*</b>客户等级</span><select id="kjtj2xx"><option>请选择</option><option>战略合作伙伴</option><option>普通客户</option><option>合作伙伴</option></select></div>
+                    <div class="khtj2x"><span>满意度（★）</span><select id="kjtj2xx"><option>请选择</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div>
+                    <div class="khtj2x"><span>信誉度（★）</span><select id="kjtj2xx"><option>请选择</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></div>
+                    <div class="khtj2xx"></div>
+                    <div class="khtj2x"><span><b id="hxh">*</b>电话</span><input type="text" id="dh" maxlength="11"></div>
+                    <div class="khtj2x"><span>传真</span><input type="text" id="dh"></div>
+                    <div class="khtj2x"><span>地址</span><input type="text"></div>
+                    <div class="khtj2x"><span>邮政编码</span><input type="text" id="dh"></div>
+                    <div class="khtj2x"><span>网址</span><input type="text"></div>
+                    <div class="khtj2xx"></div>
+                    <div class="khtj2x"><span>营业执照注册号</span><input type="text" id="dh"></div>
+                    <div class="khtj2x"><span>法人</span><input type="text"></div>
+                    <div class="khtj2x"><span>注册资金（万元）</span><input type="text" id="dh"></div>
+                    <div class="khtj2x"><span>年营业额（万元）</span><input type="text" id="dh"></div>
+                    <div class="khtj2x"><span>开户银行</span><input type="text"></div>
+                    <div class="khtj2x"><span>银行账号</span><input type="text" id="dh"></div>
+                    <div class="khtj2x"><span>地税等级号</span><input type="text" id="dh"></div>
+                    <div class="khtj2x"><span>国税等级号</span><input type="text" id="dh"></div>
+                </div>
+                <div class="khtj3"><a href="customerList.html"><button>返回客户列表</button></a><button id="khtj3butt2">保存</button></div>
+            </div>
+
+        </div>
+
+        <!-- 包含footer，引入公用 JS -->
+        <script src="../../resources/js/common/footer.js"></script>
+</body>
+<script src="../../resources/bootstrap/js/bootstrap.min.js"></script>
+<style>
+    #hxh{
+        color: rgb(255, 0, 0);
+        size: 20px;
+        padding-right: 5px;
+    }
+    .khtj {
+        border: 1px solid rgb(200, 200, 200);
+        width: 1045px;
+        box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+
+    }
+
+    .khtj1 {
+        height: 40px;
+        background-color: rgb(245, 245, 245);
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .khtj2 {
+        height: 680px;
+        font-size: 13px;
+        padding-left: 0px;
+		padding-right: 25px;
+		padding-top: 15px;
+        border-top: 1px solid rgb(200, 200, 200);
+        border-bottom: 1px solid rgb(200, 200, 200);
+    }
+
+    .khtj2x {
+        width: 50%;
+        text-align: right;
+        float: left;
+        padding-right: 15px;
+    }
+
+    .khtj2xx{
+        margin: 15px;
+        height: 1px;
+        width: 100%;
+        background-color: rgb(200, 200, 200);
+        float: left;
+    }
+
+    .khtj2 span {
+        margin: 12px;
+    }
+
+    .khtj2 input {
+        margin: 12px;
+        width: 330px;
+        height: 33px;
+        padding-left: 10px;
+    }
+
+    #kjtj2xx{
+        margin: 12px;
+        width: 330px;
+        height: 33px;
+    }
+
+    .khtj3 {
+        background-color: rgb(245, 245, 245);
+        height: 50px;
+        text-align: right;
+        padding-right: 45px;
+        padding-top: 10px;
+    }
+
+    #khtj3butt2{
+        background-color: rgb(255, 123, 0);
+        font-size: 15px;
+        color: white;
+        margin-left: 20px;
+        height: 30px;
+        width: 55px;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 1px 1px 1px rgba(70, 70, 70, 0.5);
+    }
+
+    .khtj3 button:nth-child(1) {
+        background-color: rgb(255, 255, 255);
+        font-size: 15px;
+        color: rgb(65, 65, 65);
+        margin-left: 20px;
+        height: 30px;
+        /* width: 90px; */
+        border-radius: 3px;
+        box-shadow: 1px 1px 1px rgba(70, 70, 70, 0.2);
+    }
+
+</style>
+
+<script>
+    $(function () {
+    //     $('#khmc').click(function(){
+    //         if ($(this).val()=="") {
+    //             alert("客户名称请完整填写！");
+    //         } 
+    //     })
+
+        // $('#khmc').bind('input propertychange',function(){
+        //     var text=$('#khmc').val();
+        //     var len=$('#khmc').val().length;
+        //     if(len>10){
+        //         var text=text.substring(0,10)
+        //         $('#khmc').val(text);
+        //         alert('最多可输入10个字符！')
+        //     }
+        // })
+        
+        // $('#khdq').click(function(){
+        //     if ($(this).val()=="") {
+        //         alert("客户地区请完整填写！");
+        //     } 
+        // })
+
+        // $('#dh').click(function(){
+        //     if ($(this).val()=="") {
+        //         alert("电话请完整填写！");
+        //     } 
+        // })
+
+        $('#khtj3butt2').click(function () {
+            if ($('#khmc').val() == "") {
+                alert('客户名称请填写完整！')
+            } else {
+                if ($('#khdq').val() == "") {
+                    alert('客户地区请填写完整！')
+                } else {
+                    if ($('#kjtj2xx:eq(0)').val() == "") {
+                        alert('客户经理请填写完整！')
+                    } else {
+                        if ($('#kjtj2xx:eq(1)').val() == "") {
+                            alert('客户等级请填写完整！')
+                        } else {
+                            if ($('#dh:eq(0)').val() == "") {
+                                alert('电话请填写完整！')
+                            }
+                        }
+                    }
+                }
+            }
+        })
+
+
+        // $('#dh').blur(function(){
+        //     var s=$('#dh').val()
+        //     var reg=new RegExp("^[0-9]*$")
+        //     if (!reg.test(s)) {
+        //         alert("电话请输入数字")
+        //     }
+        // })
+
+        $("#dh[type='text']").keyup(function(){   //对input输入框的内容进行校验使只能输入数字 keyup对键盘的进行监控事件
+            var c=$(this)
+            if(/[^\dh]/.test(c.val())){
+                var temp_amount=c.val().replace(/[^\d]/g,'');
+                $(this).val(temp_amount);
+            }
+        })
+
+    })
+</script>
+
+</html>

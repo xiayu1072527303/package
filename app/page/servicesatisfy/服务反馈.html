@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>首页-客户关系管理系统</title>
+    <link rel="stylesheet" href="resources/common/js/bootstrap/bootstrap.min.js">
+</head>
+
+<body>
+
+    <!-- 页头开始 -->
+    <script src="../../resources/js/common/header.js"></script>
+    <script src="../../resources/js/common/headerbar.js"></script>
+    <!-- 页头结束 -->
+
+    <!-- 左侧菜单导航开始 -->
+    <script src="../../resources/js/common/sidebar.js"></script>
+    <!-- 左侧菜单导航结束 -->
+
+    <!-- MAIN PANEL -->
+    <div id="main" role="main">
+        <!-- 路径导航开始 -->
+        <div id="ribbon">
+            <ol class="breadcrumb">
+                <li>首页</li>
+            </ol>
+        </div>
+        <!-- 路径导航结束 -->
+        <div id="content">
+
+            <div class="khtj">
+                <div class="khtj1"><span class="glyphicon glyphicon-edit"> 服务反馈</span></div>
+                <div class="khtj2">
+                    <span id="ttz">基本信息</span>
+                    <div class="khtj2xx"></div>
+                    <div class="khtj2x">
+                        <div class="khtj2x1"><span>客户 :</span></div>
+                        <div class="khtj2x2"><span>北农</span></div>
+                    </div>
+                    <div class="khtj2x">
+                        <div class="khtj2x1"><span>服务类型 :</span></div>
+                        <div class="khtj2x2"><span>其它</span></div>
+                    </div>
+                    <div class="khtj2x">
+                        <div class="khtj2x1"><span>服务概要 :</span></div>
+                        <div class="khtj2x2"><span>需要一个课程模板</span></div>
+                    </div>
+                    <div class="khtj2x">
+                        <div class="khtj2x1"><span>服务请求内容 :</span></div>
+                        <div class="khtj2x2"><span>需要一个课程模板</span></div>
+                    </div>
+                    <div class="khtj2x">
+                        <div class="khtj2x1"><span>创建人 :</span></div>
+                        <div class="khtj2x2"><span>白景丽</span></div>
+                    </div>
+                    <div class="khtj2x">
+                        <div class="khtj2x1"><span>创建日期 :</span></div>
+                        <div class="khtj2x2"><span>2016-08-31</span></div>
+                    </div>
+                    <span id="ttz">处理信息</span>
+                    <div class="khtj2xx"></div>
+                    <div class="khtj2x">
+                        <div class="khtj2x1"><span>处理人 :</span></div>
+                        <div class="khtj2x2"><span>白景丽</span></div>
+                    </div>
+                    <div class="khtj2x">
+                        <div class="khtj2x1"><span>分配日期 :</span></div>
+                        <div class="khtj2x2"><span>2016-08-31</span></div>
+                    </div>
+                    <div class="khtj2x">
+                        <div class="khtj2x1"><span>服务处理情况 :</span></div>
+                        <div class="khtj2x2"><span>已提供</span></div>
+                    </div>
+                    <div class="khtj2x">
+                        <div class="khtj2x1"><span>处理日期 :</span></div>
+                        <div class="khtj2x2"><span>2016-08-31</span></div>
+                    </div>
+
+                    <span id="ttz">反馈信息</span>
+                    <div class="khtj2xx"></div>
+
+                    <div class="khtj2x11"><span><b id="hxh">*</b>服务反馈结果 :</span></div>
+                    <div class="khtj2x22"><textarea id="dbk"></textarea></div>
+                    <br>
+                    <div class="khtj2x11"><span><b id="hxh">*</b>满意度（★） :</span></div>
+                    <div class="khtj2x22"><select id="cxxx2x">
+                            <option>请选择</option>
+                            <option>★★★</option>
+                            <option>★★</option>
+                            <option>★</option>
+                        </select></div>
+                </div>
+
+                <div class="khtj3"><a href="serviceSatisfyList.html"><button>返回服务反馈列表</button></a><button
+                        id="butbox">保存</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 包含footer，引入公用 JS -->
+        <script src="../../resources/js/common/footer.js"></script>
+</body>
+<script src="../../resources/bootstrap/js/bootstrap.min.js"></script>
+<style>
+    #cxxx2x {
+        float: left;
+        height: 35px;
+        width: 450px;
+    }
+
+    #ttz {
+        font-size: 15px;
+        margin-left: 30px;
+        float: left;
+        margin-top: 20px;
+    }
+
+    #hxh {
+        color: rgb(255, 0, 0);
+        size: 20px;
+        padding-right: 5px;
+    }
+
+    #dbk {
+        height: 130px;
+        width: 450px;
+        padding: 10px;
+    }
+
+    .khtj {
+        border: 1px solid rgb(200, 200, 200);
+        width: 1045px;
+        box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+
+    }
+
+    .khtj1 {
+        height: 40px;
+        background-color: rgb(245, 245, 245);
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .khtj2 {
+        height: 720px;
+        font-size: 13px;
+        padding-left: 0px;
+        padding-right: 25px;
+        border-top: 1px solid rgb(200, 200, 200);
+        border-bottom: 1px solid rgb(200, 200, 200);
+    }
+
+    .khtj2x {
+        width: 50%;
+        /* text-align: right; */
+        float: left;
+        /* padding-right: 15px; */
+        padding: 15px;
+    }
+
+    .khtj2x1 {
+        width: 50%;
+        text-align: right;
+        float: left;
+        font-size: 14px;
+
+    }
+
+    .khtj2x11 {
+        width: 25%;
+        text-align: right;
+        float: left;
+        font-size: 14px;
+
+    }
+
+    .khtj2x2 {
+        width: 50%;
+        text-align: left;
+        float: left;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .khtj2x22 {
+        width: 75%;
+        text-align: left;
+        float: left;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .khtj2xx {
+        margin: 15px;
+        height: 1px;
+        width: 100%;
+        background-color: rgb(200, 200, 200);
+        float: left;
+    }
+
+    .khtj2 span {
+        margin: 12px;
+    }
+
+    .khtj2 input {
+        margin: 12px;
+        width: 330px;
+        height: 33px;
+    }
+
+    .khtj3 {
+        background-color: rgb(245, 245, 245);
+        height: 50px;
+        text-align: right;
+        padding-right: 45px;
+        padding-top: 10px;
+
+    }
+
+    .khtj3 button:nth-child(1) {
+        background-color: rgb(255, 255, 255);
+        font-size: 15px;
+        color: rgb(65, 65, 65);
+        margin-left: 20px;
+        height: 30px;
+        /* width: 90px; */
+        border-radius: 3px;
+        box-shadow: 1px 1px 1px rgba(228, 228, 228, 0.2);
+    }
+
+    .khtj3 button:nth-child(2) {
+        background-color: rgb(255, 123, 0);
+        font-size: 15px;
+        color: white;
+        margin-left: 20px;
+        height: 30px;
+        width: 55px;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 1px 1px 1px rgba(70, 70, 70, 0.5);
+    }
+</style>
+
+<script>
+    $(function () {
+        $('#butbox').click(function () {
+            if ($('#dbk').val() == "") {
+                alert('服务反馈结果不可以为空!')
+            }
+        })
+    })
+</script>
+
+</html>

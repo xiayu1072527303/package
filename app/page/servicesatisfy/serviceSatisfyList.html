@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8" />
+	<title>首页-客户关系管理系统</title>
+	<link rel="stylesheet" href="resources/common/js/bootstrap/bootstrap.min.js">
+</head>
+
+<body>
+
+	<!-- 页头开始 -->
+	<script src="../../resources/js/common/header.js"></script>
+	<script src="../../resources/js/common/headerbar.js"></script>
+	<!-- 页头结束 -->
+
+	<!-- 左侧菜单导航开始 -->
+	<script src="../../resources/js/common/sidebar.js"></script>
+	<!-- 左侧菜单导航结束 -->
+
+	<!-- MAIN PANEL -->
+	<div id="main" role="main">
+		<!-- 路径导航开始 -->
+		<div id="ribbon">
+			<ol class="breadcrumb">
+				<li>首页</li>
+			</ol>
+		</div>
+		<!-- 路径导航结束 -->
+		<div id="content">
+
+			<div class="cxxx">
+				<div class="cxxx1"><span class="glyphicon glyphicon-edit"> 查询信息</span></div>
+				<div class="cxxx2">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>客户</span><input type="text">
+                    <span>服务类型</span><select id="cxxx2x"><option>全部</option><option>咨询</option><option>其它</option></select><br>
+					<span>服务概要</span><input type="text">
+
+					<!-- <div class="cxxx2x">| <span class="glyphicon glyphicon-chevron-down"></span></div> -->
+				</div>
+				<div class="cxxx3">
+                    <button	id="cxxx3jb">查询</button><a href="服务反馈.html"><button id="cxxx3jb">添加</button></a></div>
+			</div>
+
+			<div class="lbxx">
+				<div class="lbxx1"><span class="glyphicon glyphicon-list-alt"> 列表信息</span></div>
+				<table class="lbxx2">
+					<tr>
+						<th>序号</th>
+						<th>服务类型</th>
+						<th>客户</th>
+						<th>服务概要</th>
+						<th>创建日期</th>
+                        <th>分配时间</th>
+                        <th>处理人</th>
+                        <th>处理时间</th>
+						<th><span class="glyphicon glyphicon-cog" id=""></span>操作</th>
+					</tr>
+					<tr>
+						<td class="">1</td>
+						<td class="">其它</td>
+						<td class="">北农</td>
+						<td class="">需要一个课程模板</td>
+						<td class="">2016-06-31</td>
+                        <td class="">2016-06-31</td>
+                        <td class="">白景丽</td>
+						<td class="">2016-06-31</td>
+						<td class="">
+							<a href="服务反馈.html"><button class="glyphicon glyphicon-pencil lbxx2bt"></button></a>
+					</tr>
+				</table>
+				<div class="lbxx3">显示第<b>1</b>到第<b>1</b>条记录，总共<b>1</b>条记录</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<!-- 包含footer，引入公用 JS -->
+	<script src="../../resources/js/common/footer.js"></script>
+</body>
+<script src="../../resources/bootstrap/js/bootstrap.min.js"></script>
+<style>
+	.cxxx {
+		border: 1px solid rgb(200, 200, 200);
+		width: 1045px;
+		box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+
+	}
+
+	.cxxx1 {
+		height: 40px;
+		background-color: rgb(245, 245, 245);
+		font-size: 15px;
+		padding: 10px;
+	}
+
+	.cxxx2 {
+		height: 150px;
+		font-size: 13px;
+		padding-left: 30px;
+		padding-right: 25px;
+		padding-top: 15px;
+		border-top: 1px solid rgb(200, 200, 200);
+		border-bottom: 1px solid rgb(200, 200, 200);
+	}
+
+	#cxxx2x {
+		margin: 12px;
+		width: 385px;
+		height: 33px;
+		/* size: 12px; */
+		/* color: rgba(0, 0, 0, 0.7); */
+		/* position: absolute; 
+		top: 10px;
+		left: 10px; */
+		/* background-color: rgb(255, 123, 0); */
+	}
+
+	.cxxx2 span {
+		margin: 12px;
+	}
+
+	.cxxx2 input {
+		margin: 12px;
+		width: 385px;
+		height: 33px;
+		padding-left: 10px;
+	}
+
+	.cxxx3 {
+		background-color: rgb(245, 245, 245);
+		height: 50px;
+		text-align: right;
+		padding-right: 45px;
+		padding-top: 10px;
+	}
+
+	#cxxx3jb {
+		background-color: rgb(255, 123, 0);
+		font-size: 15px;
+		color: white;
+		margin-left: 20px;
+		height: 30px;
+		width: 55px;
+		border: none;
+		border-radius: 3px;
+		box-shadow: 1px 1px 1px rgba(70, 70, 70, 0.5);
+	}
+
+	.lbxx {
+		border: 1px solid rgb(200, 200, 200);
+		width: 1045px;
+		box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+		margin-top: 30px;
+	}
+
+	.lbxx1 {
+		height: 40px;
+		background-color: rgba(0, 0, 0, 0.7);
+		font-size: 15px;
+		padding: 10px;
+	}
+
+	.lbxx1 span {
+		color: rgb(255, 255, 255);
+	}
+
+	.lbxx2 {
+		border: 1px solid rgb(200, 200, 200);
+		/* height: 140px; */
+		width: 100%;
+		text-align: center;
+	}
+
+	/* .lbxx2bjh{
+    background-color: rgba(230, 230, 230, 0.1);
+} */
+
+	.lbxx2 th {
+		background-color: rgb(207, 220, 236);
+		text-align: center;
+		height: 50px;
+	}
+
+	.lbxx table td {
+		border: 1px solid rgb(200, 200, 200);
+		height: 40px;
+	}
+
+	.lbxx2bt {
+		background-color: rgb(255, 123, 0);
+		color: white;
+		margin-left: 5px;
+		height: 25px;
+		width: 25px;
+		font-size: 5px;
+		border: none;
+		border-radius: 1px;
+		box-shadow: 1px 1px 1px rgba(70, 70, 70, 0.5);
+	}
+
+	.lbxx2btt {
+		background-color: rgb(255, 0, 0);
+		color: rgb(255, 255, 255);
+		margin-left: 5px;
+		font-size: 5px;
+		text-align: center;
+		height: 25px;
+		width: 25px;
+		box-shadow: 1px 1px 1px rgba(70, 70, 70, 0.5);
+		border: 1px solid rgba(0, 0, 0, 0.3);
+
+	}
+
+
+	.lbxx2 tr th span {
+		color: rgb(64, 107, 163);
+		margin-right: 10px;
+	}
+
+	/* .lbxx2cztb{
+    color: rgb(78, 133, 216);
+    
+} */
+	.lbxx3 {
+		height: 50px;
+		padding-top: 30px;
+	}
+
+	#cxxx3xb {
+		background-color: rgb(255, 255, 255);
+		font-size: 15px;
+		color: rgb(65, 65, 65);
+		margin-left: 20px;
+		height: 30px;
+		/* width: 90px; */
+		border-radius: 3px;
+		box-shadow: 1px 1px 1px rgba(228, 228, 228, 0.2);
+	}
+</style>
+
+<script>
+	function sc() {
+		var result = confirm('确认删除这个服务吗？')
+		if (result) {
+			alert('删除成功')
+		} else {
+			alert('取消删除')
+		}
+	}
+
+	$(function () {
+		$('tr:odd').css('background-color', 'rgb(245, 245, 245)')
+	})
+
+
+	$('.lbxx2btt').click(function () {
+		$(this).parents('tr').hide()
+	})
+
+
+</script>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>首页-客户关系管理系统</title>
+    <link rel="stylesheet" href="resources/common/js/bootstrap/bootstrap.min.js">
+</head>
+
+<body>
+
+    <!-- 页头开始 -->
+    <script src="../../resources/js/common/header.js"></script>
+    <script src="../../resources/js/common/headerbar.js"></script>
+    <!-- 页头结束 -->
+
+    <!-- 左侧菜单导航开始 -->
+    <script src="../../resources/js/common/sidebar.js"></script>
+    <!-- 左侧菜单导航结束 -->
+
+    <!-- MAIN PANEL -->
+    <div id="main" role="main">
+        <!-- 路径导航开始 -->
+        <div id="ribbon">
+            <ol class="breadcrumb">
+                <li>首页</li>
+            </ol>
+        </div>
+        <!-- 路径导航结束 -->
+        <div id="content">
+
+            <div class="khtj">
+                <div class="khtj1"><span class="glyphicon glyphicon-edit"> 联系人添加</span></div>
+                <div class="khtj2"><br>
+                    <div class="khtj2x"><span><b id="hxh">*</b>姓名</span></div>
+                    <div clss="khtj2y"><input type="text" class="kljf" id="khtj2inp" maxlength="30"></div><br>
+                    <div class="khtj2x"><span><b id="hxh">*</b>性别</span></div>
+                    <div clss="khtj2y"><input id="manwoman" type="radio" checked="checked" name="1" />男 <input
+                            id="manwoman" type="radio" name="1" />女 </div><br>
+                    <div class="khtj2x"><span><b id="hxh">*</b>办公电话</span></div>
+                    <div clss="khtj2y"><input type="text" class="kljf" id="khtj2inp1"></div><br>
+                    <div class="khtj2x"><span>手机</span></div>
+                    <div clss="khtj2y"><input type="text" class="kljf" id="khtj2inp2" maxlength="11"></div><br>
+                    <div class="khtj2x"><span>职位</span></div>
+                    <div clss="khtj2y"><input type="text" class="kljf" id="khtj2inp3"></div><br>
+                    <div class="khtj2x"><span>备注</span></div>
+                    <div clss="khtj2y"><input type="text" class="kljf" id="khtj2inp4"></div><br>
+                </div>
+                <div class="khtj3"><a href="联系人列表.html"><button>返回联系人列表</button></a><button id="gsd">保存</button></div>
+            </div>
+
+        </div>
+
+        <!-- 包含footer，引入公用 JS -->
+        <script src="../../resources/js/common/footer.js"></script>
+</body>
+<script src="../../resources/bootstrap/js/bootstrap.min.js"></script>
+<style>
+    #manwoman {
+        margin: 8px;
+        /* font-size: 15px; */
+        /* size: 10px; */
+
+    }
+
+    #hxh {
+        color: rgb(255, 0, 0);
+        size: 20px;
+        padding-right: 5px;
+    }
+
+    .khtj {
+        border: 1px solid rgb(200, 200, 200);
+        width: 1045px;
+        box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+
+    }
+
+    .khtj1 {
+        height: 40px;
+        background-color: rgb(245, 245, 245);
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .khtj2 {
+        height: 350px;
+        font-size: 13px;
+        padding-left: 0px;
+        padding-right: 25px;
+        padding-top: 15px;
+        border-top: 1px solid rgb(200, 200, 200);
+        border-bottom: 1px solid rgb(200, 200, 200);
+    }
+
+    .khtj2x {
+        width: 30%;
+        text-align: right;
+        float: left;
+        padding-top: 6px;
+    }
+
+    .khtj2y {
+        width: 70%;
+        height: 30px;
+        text-align: left;
+        float: left;
+    }
+
+    .khtj2xx {
+        margin: 15px;
+        height: 1px;
+        width: 100%;
+        background-color: rgb(200, 200, 200);
+        float: left;
+    }
+
+    .khtj2 span {
+        margin: 12px;
+    }
+
+    .kljf {
+
+        width: 330px;
+        height: 33px;
+        padding-left: 10px;
+    }
+
+    #kjtj2xx {
+        margin: 12px;
+        width: 330px;
+        height: 33px;
+    }
+
+    .khtj3 {
+        background-color: rgb(245, 245, 245);
+        height: 50px;
+        text-align: right;
+        padding-right: 45px;
+        padding-top: 10px;
+    }
+
+    .khtj3 button:nth-child(2) {
+        background-color: rgb(255, 123, 0);
+        font-size: 15px;
+        color: white;
+        margin-left: 20px;
+        height: 30px;
+        width: 55px;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 1px 1px 1px rgba(70, 70, 70, 0.5);
+    }
+
+    .khtj3 button:nth-child(1) {
+        background-color: rgb(255, 255, 255);
+        font-size: 15px;
+        color: rgb(65, 65, 65);
+        margin-left: 20px;
+        height: 30px;
+        /* width: 90px; */
+        border-radius: 3px;
+        box-shadow: 1px 1px 1px rgba(70, 70, 70, 0.2);
+    }
+</style>
+
+<script>
+    $(function () {
+        // $('#khtj2inp:eq(0)').click(function () {
+        //     if ($(this).val() == "") {
+        //         alert("姓名请完整填写！");
+        //     }
+        // })
+
+        $('#gsd').click(function () {
+            if ($('#khtj2inp:eq(0)').val() == "") {
+                alert('姓名请填写完整！')
+            } else {
+                if ($('#manwoman').val() == "") {
+                    alert('性别请填写完整！')
+                } else {
+                    if ($('#khtj2inp1').val() == "") {
+                        alert('办公电话请填写完整！')
+                    
+                    }
+                }
+            }
+        })
+
+        // $('#khtj2inp:eq(0)').bind('input propertychange', function () {
+        //     var text = $('#khtj2inp:eq(0)').val();
+        //     var len = $('#khtj2inp:eq(0)').val().length;
+        //     if (len > 10) {
+        //         var text = text.substring(0, 10)
+        //         $('#khtj2inp:eq(0)').val(text);
+        //         alert('最多可输入10个字符！')
+        //     }
+        // })
+
+
+
+        $("#khtj2inp1").keyup(function(){   //对input输入框的内容进行校验使只能输入数字 keyup对键盘的进行监控事件
+            var c=$(this)
+            if(/[^\dh]/.test(c.val())){
+                var temp_amount=c.val().replace(/[^\d]/g,'');
+                $(this).val(temp_amount);
+            }
+        })
+        $("#khtj2inp2").keyup(function(){   //对input输入框的内容进行校验使只能输入数字 keyup对键盘的进行监控事件
+            var c=$(this)
+            if(/[^\dh]/.test(c.val())){
+                var temp_amount=c.val().replace(/[^\d]/g,'');
+                $(this).val(temp_amount);
+            }
+        })
+        // $('#khtj2inp2').bind('input propertychange', function () {
+        //     var text = $('#khtj2inp2').val();
+        //     var len = $('#khtj2inp2').val().length;
+        //     if (len > 11) {
+        //         var text = text.substring(0, 11)
+        //         $('#khtj2inp2').val(text);
+        //         alert('最多可输入11个数字！')
+        //     }
+        // })
+
+    })
+</script>
+
+</html>
